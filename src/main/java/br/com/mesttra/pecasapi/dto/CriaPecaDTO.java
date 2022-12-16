@@ -7,7 +7,7 @@ import br.com.mesttra.pecasapi.enums.Categoria;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
-public class CriarPecaDTO {
+public class CriaPecaDTO {
 
 	@NotBlank
 	private String nome;

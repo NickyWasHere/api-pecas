@@ -5,7 +5,7 @@ import org.springframework.beans.BeanUtils;
 import br.com.mesttra.pecasapi.entity.Peca;
 import br.com.mesttra.pecasapi.enums.Categoria;
 
-public class MostrarPecaDTO {
+public class MostraPecaDTO {
 
 	private Long codigoBarras;
 	
@@ -21,8 +21,8 @@ public class MostrarPecaDTO {
 	
 	private Categoria categoria;
 
-	public static MostrarPecaDTO toDto(Peca peca) {
-		MostrarPecaDTO pecaDto = new MostrarPecaDTO();
+	public static MostraPecaDTO toDto(Peca peca) {
+		MostraPecaDTO pecaDto = new MostraPecaDTO();
 		BeanUtils.copyProperties(peca, pecaDto);
 		return pecaDto;
 		
